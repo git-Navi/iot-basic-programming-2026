@@ -111,3 +111,28 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
         |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
         |8진수|0|1|2|3|4|5|6|7|10|11|12|13|14|15|16|17|
         |16진수|0x0|0x1|0x2|0x3|0x4|0x5|0x6|0x7|0x8|0x9|0xA|0xB|0xC|0xD|0xE|0xF|
+
+
+## 2일차
+
+### C 기본 문법 계속 진행
+
+1. 기본 문법
+
+    - 데이터형 : [확인](./Day-02/Chap03-Solution/Chap03-01-app/main.c)
+    - 실수형 및 변수 : [확인](./Day-02/Chap03-Solution/Chap03-02-app/main.c)
+    - 데이터 입력 : [확인](./Day-02/Chap03-Solution/Chap03-03-app/main.c)
+
+    - 연산자 : [확인](./Day-02/Chap04-Solution/Chap04-01-app/main.c)
+
+2. 퀴즈
+    - 3문제 진행
+        - [1] [확인](./Day-02/Chap04-Solution/Chap04-quiz-1/main.c)
+        - [2] [확인](./Day-02/Chap04-Solution/Chap04-quiz-2/main.c)
+        - [3] [확인](./Day-02/Chap04-Solution/Chap4-quiz-4/main.c)
+
+## 3일차
+
+### C 기본 문법 계속 진행
+
+1. 제어문
