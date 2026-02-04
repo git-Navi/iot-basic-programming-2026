@@ -141,11 +141,26 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 
 2. 반복문
     - while, do-while : [확인](./Day-03/Chap05-Solution/Chap05-03-app/main.c)
+    - for : [확인](./Day-03/Chap05-Solution/Chap05-04-app/main.c)
+    - 구구단 : [확인](./Day-03/Chap05-Solution/Chap05-05-app/main.c)
+    - 무한루프 : [확인](./Day-03/Chap05-Solution/Chap05-06-app/main.c)
+    - continue, break : [확인](./Day-03/Chap05-Solution/Chap05-07-app/main.c)
 
-3. 디버깅
+3. **디버깅 기본**
     - 단축키
         - F5 : 디버깅 시작
+        - Shift + F5 : 디버깅 종료
         - F9 : break 포인트 toggle
-        - F10 : 디버깅 소스코드 한 줄 실행
-        - F11 : 소스코드 내 함수나 클래스가 존재하면 내부로 진입
+        - F10 : 디버깅 소스코드 한 줄 실행, 함수를 실행하고 그냥 넘어감.
+        - F11 : 소스코드 내 `함수`나 `클래스`가 존재하면 내부로 진입
         - 로컬, 조사식 창 활용!
+
+4. 함수
+    - 함수 기본 : [확인](./Day-03/Chap07-Solution/Chap07-01-app/main.c)
+
+## 4일차
+
+### C 기본 문법 계속
+
+1. 함수 계속
+    - 함수 유형 : 
