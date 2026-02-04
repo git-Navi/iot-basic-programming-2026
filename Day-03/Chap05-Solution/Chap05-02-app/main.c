@@ -1,31 +1,31 @@
-// switch~case ¹®
+ï»¿// switch~case êµ¬ë¬¸
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 
 int main() {
 
-	printf("switch~case ¹® ¿¹Á¦\n");
+	printf("switch~case êµ¬ë¬¸ ì‹œì‘í•˜ê¸°\n");
 
-	int rank = 0, money = 0;	// º¯¼ö ¼±¾ğ, ÃÊ±âÈ­
+	int rank = 0, money = 0;	// rank, money ì´ˆê¸°í™”
 
-	printf("µî¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ìˆœìœ„ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d", &rank);
 
 	//switch (rank) {
-	//case 1:	// 1µîÀÌ¸é?
-	//	money = 1000;	// 1000¸¸¿ø
-	//	break;			// switch¹® Å»Ãâ(ºüÁ®³ª°¡¶ó!), break¹®À» »©¹ö¸®¸é ¾Æ·¡ÀÇ ·ÎÁ÷µµ ½ÇÇàµÇ¹ö¸².
-	//case 2:	// 2µîÀÌ¸é?
-	//	money = 500;	// 500¸¸¿ø
+	//case 1:	// 1ë“±
+	//	money = 1000;	// 1000ë§Œì›
+	//	break;			// switchë¬¸ íƒˆì¶œ (ë¹ ì ¸ë‚˜ê°€ê¸°!) breakë¬¸ì€ í•„ìˆ˜!
+	//case 2:	// 2ë“±
+	//	money = 500;	// 500ë§Œì›
 	//	break;
-	//case 3:	// 3µîÀÌ¸é?
-	//	money = 200;	// 200¸¸¿ø
+	//case 3:	// 3ë“±
+	//	money = 200;	// 200ë§Œì›
 	//	break;
-	//case 4:	// 4µîÀÌ¸é?
-	//	money = 50;		// 50¸¸¿ø
+	//case 4:	// 4ë“±
+	//	money = 50;		// 50ë§Œì›
 	//	break;
-	//default:	// if¹® else
+	//default:	// ifë¬¸ì˜ elseì™€ ë™ì¼
 	//	money = 10;
 	//	break;
 	//}
@@ -46,7 +46,7 @@ int main() {
 		money = 10;
 	}
 
-	printf("%dµî ´çÃ·±İ %d ¸¸¿ø¿¡ ´çÃ·µÇ¼Ì½À´Ï´Ù!\a\n", rank, money);
+	printf("%dë“±ì˜ ë‹¹ì²¨ê¸ˆì€ %d ë§Œì› ì…ë‹ˆë‹¤!\a\n", rank, money);
 
 	return 0;
 }

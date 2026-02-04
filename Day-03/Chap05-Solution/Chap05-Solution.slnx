@@ -6,4 +6,9 @@
   <Project Path="Chap05-01-app/Chap05-01-app.vcxproj" />
   <Project Path="Chap05-02-app/Chap05-02-app.vcxproj" />
   <Project Path="Chap05-03-app/Chap05-03-app.vcxproj" />
+  <Project Path="Chap05-04-app/Chap05-04-app.vcxproj" />
+  <Project Path="Chap05-05-app/Chap05-05-app.vcxproj" />
+  <Project Path="Chap05-06-app/Chap05-06-app.vcxproj" />
+  <Project Path="Chap05-07-app/Chap05-07-app.vcxproj" />
+  <Project Path="Chap05-quiz/Chap05-quiz.vcxproj" />
 </Solution>
