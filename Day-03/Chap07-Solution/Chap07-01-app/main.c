@@ -3,7 +3,8 @@
 #include<stdio.h>
 
 // C에만 거의 필수! (C 최신 표준에서는 에러가 아님.)
-int sum(int x, int y);	// 함수 선언, 내용 없음!
+//int sum(int x, int y);	// 함수 선언, 내용 없음!
+int sum(int, int);	// 선언의 매개변수는 변수명 생략 가능!
 
 int main() {
 	int a = 10, b = 20;

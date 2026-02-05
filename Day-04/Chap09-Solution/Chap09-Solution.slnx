@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Chap09-01-app/Chap09-01-app.vcxproj" />
+  <Project Path="Chap09-02-app/Chap09-02-app.vcxproj" />
+  <Project Path="Chap09-03-app/Chap09-03-app.vcxproj" />
+</Solution>
