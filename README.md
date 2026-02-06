@@ -186,7 +186,7 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 
 ## 5일차
 
-### C 기본 문법
+### C 중급 문법
 
 1. 포인터
 
@@ -218,5 +218,11 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 3. 문자 : [확인](./Day-05/Chap11-Solution/Chap11-01-app/main.c)
     - getchar() 입력버퍼 한글자 지우기 : [확인](./Day-05/Chap11-Solution/Chap11-02-app/main.c)
 
-4. 문자열
-    - 
+4. 문자 기본 : [확인](./Day-05/Chap12-Solution/Chap12-01-app/main.c)
+    - 문자열 상수와 문자 포인터 변수 사용법
+
+## 6일차
+
+### C 중급 문법
+
+4. 문자열과 포인터
