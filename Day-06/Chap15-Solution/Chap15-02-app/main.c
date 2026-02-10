@@ -17,7 +17,10 @@ int main(void) {
 
 	// 포인터배열
 	// char* ptr_animal[] == char** ptr_animal
+	// 문자열을 선언 및 초기화는 문자 배열 포인터로만 가능
 	char* ptr_animal[] = { "eagle", "tiger", "lion", "squirrel" };
+	// 이중포인터는 대입이나 매개변수로 전달할 때 가능
+	char** ptr = ptr_animal;
 	int count = sizeof(ptr_animal) / sizeof(ptr_animal[0]);
 
 	print_str(ptr_animal, count);

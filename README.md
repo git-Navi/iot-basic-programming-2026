@@ -261,6 +261,70 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 
     ![alt text](image-7.png)
 
-    - [단일포인터배열](./Day-05/Chap10-Solution/Chap10-03-app/main.c) VS [이중포인터배열](./Day-06/Chap15-Solution/Chap15-02-app/main.c) 비교
+    - [단일포인터](./Day-05/Chap10-Solution/Chap10-03-app/main.c) VS [이중포인터](./Day-06/Chap15-Solution/Chap15-02-app/main.c) 비교
 
-11. 함수와 void 포인터
+## 7일차
+
+### C 중급 문법
+
+1. 함수와 void 포인터 : [확인](./Day-07/Chap15-Solution/Chap15-01-app/main.c)
+    - 함수 포인터 - 함수도 메모리상에 주소를 가지고 있음.
+    - 변수와 동일하게 함수도 주소를 통해서 여러 함수를 변경해서 사용
+    - `어떤 함수를 연결하느냐에 따라 동작이 바뀐다.`
+    - 실행 시점에 어떤 함수가 실행 될 지 모를 때 -> [확인](./Day-07/Chap15-Solution/Chap15-02-app/main.c)
+    - 조건문을 줄이고, 구조를 유연하게 만들기 위해서 사용
+    - 사용 예 - 임베디드 하드웨어 이벤트 인터럽트, 상태머신, GUI 이벤트, 게임 상태별 로직
+
+2. void 포인터 : [확인](./Day-07/Chap15-Solution/Chap15-03-app/main.c)
+    - void - 리턴 값이 없을 때, 매개변수가 없을 때 사용한다.
+    - 포인터 특징 - int형 int*, double형 double* 와 같이 타입형이 일치해야한다.
+    - 가리키는 자료형이 달라도 사용할 수 있는 포인터 -> void 포인터
+    - void는 아직 자료형이 정해지지 않았음.
+    - void 포인터에서 형변환을 제거하면 오류! - (int*), (double*) 등
+
+3. 메모리 동적할당
+    - 프로그램에 필요한 메모리를 원하는 만큼 확보
+    - malloc - memory allocation. 메모리 동적할당 : [확인](./Day-07/Chap16-Solution/Chap16-01-app/main.c)
+    - calloc - contiguos allocation. 연속된 메모리 동적할당. 0으로 초기화. malloc보다 느림. : [확인](./Day-07/Chap16-Solution/Chap16-03-app/main.c)
+    - realloc - re-allocation. 메모리 크기 조정.
+    - free - 메모리 반환
+    - **NULL** - 아무것도 가리키지 않는 포인터 값!
+
+4. 프로그램의 메모리 영역
+
+    ![alt text](image-8.png)
+
+    - 코드영역, 스택, 힙, 기타 데이터 영역 구분
+    - 코드 영역 - 소스코드가 실행하는 영역
+    - 스택 - 지역변수 영역
+    - 힙 - 동적할당 영역, Pointer, NULL...
+    - 기타 데이터 영역 - 전역변수, static 변수 영역
+
+5. 동적 할당 저장공간 활용 : [확인](./Day-07/Chap16-Solution/Chap16-04-app/main.c)
+    - 영어사전과 같은 데이터를 저장할 때 : [확인](./Day-07/Chap16-Solution/Chap16-05-app/main.c)
+        - 배열로 처리하면 메모리 낭비가 심함.
+        - 동적할당으로 메모리 절약
+
+6. main 함수 명령행 인수 사용 : [확인](./Day-07/Chap16-Solution/Chap16-06-app/main.c)
+    - int main(int argc, char** argv) 가 기본 메인 함수
+    - 프로젝트 속성에서 명령인수 입력 방법
+
+    ![alt text](image-9.png)
+
+7. 사용자 정의 자료형 - 구조체 : [확인](./Day-07/Chap17-Solution/Chap17-01-app/main.c)
+    - C언어는 절차적 프로그래밍 언어
+    - C++는 객체지향 프로그래밍 언어. C#, Java, Python...
+    - 객체지향적 개념을 사용하기 시작한 것 - 구조체
+
+## 8일차
+### C 중급 문법
+
+1. 사용자 정의 자료형 - 구조체
+
+2. 사용자 정의 자료형 - 공용체, 열거형
+
+3. 파일 입출력
+
+4. 전처리, 분할 컴파일
+
+5. 토이 프로젝트 - 주소록 프로그램
