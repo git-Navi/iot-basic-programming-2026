@@ -4,8 +4,12 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 ## 1일차
 
 - Git, Github Desktop 설치
+    - https://git-scm.com/ 에서 Install for Windows 로 다운로드 진행
+    - https://desktop.github.com/download/ 에서 다운로드 후 설치
 - Visual Studio Code 설치
-- README 미리보기 : Ctrl + Shift + V
+    - https://code.visualstudio.com/download 운영체제별 다운로드 버튼 클릭
+    - 특정폴더에 지정해서 설치 (예, C:\DEV\IDE)
+- VSCode 상의 README 미리보기 : Ctrl + Shift + V
 
 ### C언어 학습 순서
 - 기본
@@ -28,7 +32,7 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
     9. 전처리와 분할 컴파일
 
 ### 프로그램 개요
-- 프로그램 : `사용자의 요구`에 따라 `데이터를 처리`(표현, 이동, 저장, 로드 등) 할 수 있는 `소프트웨어`
+- 프로그램 : 컴퓨팅 환경(PC, 모바일, 임베디드 등)에서 `사용자의 요구`에 따라 `데이터를 처리`(표현, 이동, 저장, 로드 등) 할 수 있는 `소프트웨어`
 - 일의 순서를 의미, 일의 순서를 컴퓨터 내에서 실행하는 것
 - 프로그램을 만드는 작업 : 프로그래밍(코딩, SW 개발, 소프트웨어 엔지니어)
 
@@ -43,6 +47,7 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
     - c, cpp -> 확장자 exe 파일로 생성
 - 컴파일러 : IDE(Integrity Development Environment) 툴을 사용
     - `Visual Studio`, Visual Code, Rider, Eclipse 등 
+    - 컴파일러 - C/C++ 컴파일러, JAVA 컴파일러, C# 등 언어 자체를 컴파일하는 프로그램
 
 ### 비주얼 스튜디오 설치
 - https://visualstudio.microsoft.com/ko/ 에서 무료 다운로드 받기 버튼 클릭
@@ -90,6 +95,10 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 9. 프로젝트가 여러 개 일때
     - `솔루션 속성` > `시작 프로젝트 구성` > `현재 선택 영역`으로 선택
 
+    ![alt text](image-10.png)
+
+    - 포커스 중인 프로젝트가 시작 프로젝트로 설정됨.
+
 
 ### C 기본 문법
 
@@ -120,10 +129,12 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 1. 기본 문법
 
     - 데이터형 : [확인](./Day-02/Chap03-Solution/Chap03-01-app/main.c)
+        - 많은 데이터형 중에서 char(1), int(4), double(8)만 우선적으로 기억
     - 실수형 및 변수 : [확인](./Day-02/Chap03-Solution/Chap03-02-app/main.c)
     - 데이터 입력 : [확인](./Day-02/Chap03-Solution/Chap03-03-app/main.c)
 
     - 연산자 : [확인](./Day-02/Chap04-Solution/Chap04-01-app/main.c)
+        - 수치연산, 논리연산, 관계연산, 비트연산,
 
 2. 퀴즈
     - 3문제 진행
@@ -188,13 +199,14 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 
 ### C 중급 문법
 
-1. 포인터
+1. **포인터**
 
     ![alt text](image-6.png)
     - 포인터 이해 : [확인](./Day-05/Chap09-Solution/Chap09-02-app/main.c)
         - 변수의 주소(메모리상)를 담고, 간접참조연산자(*)로 그 변수의 값을 사용하기 위한 것
         - 변수의 주소를 변경해서 `여러 변수를 사용 가능`
-        - 변수의 주소는 바뀌지 않는 값. 변수의 주소는 바꿀 수 없다.
+        - 변수의 주소는 바뀌지 않는 값 (상수). 변수의 주소는 바꿀 수 없다.
+        - 변수의 가리키는 값(*)은 변경 가능 (변수)
         - 포인터에 주소를 저장할 때는 자료형이 동일해야
 
     - 포인터 크기 : [확인](./Day-05/Chap09-Solution/Chap09-03-app/main.c)
@@ -245,7 +257,7 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 
 7. 데이터 공유 방법!! : [확인](./Day-06/Chap13-Solution/Chap13-03-app/main.c)
     - 데이터를 필요할 때마다 복사하는 것보다, 같이 공유하는 것이 메모리를 절약하는 방법
-    - `값을 복사해서 전달, 주소를 전달`
+    - `값을 복사해서 전달(Call by value), 주소를 전달(Call by reference)`
     - 포인터변수로 리턴
     
 8. 다차원 배열 : [확인](./Day-06/Chap14-Solution/Chap14-01-app/main.c)
@@ -319,11 +331,25 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 ## 8일차
 ### C 중급 문법
 
-1. 사용자 정의 자료형 - 구조체
+1. 사용자 정의 자료형 - 구조체 : [확인](./Day-08/Chap17-Solution/Chap17-01-app/main.c)
 
-2. 사용자 정의 자료형 - 공용체, 열거형
+    - 구조체 사용 : [확인](./Day-08/Chap17-Solution/Chap17-02-app/main.c)
+    - 구조체 내 구조체 : [확인](./Day-08/Chap17-Solution/Chap17-03-app/main.c)
+    - 구조체 포인터 : [확인](./Day-08/Chap17-Solution/Chap17-04-app/main.c)
+
+2. 사용자 정의 자료형 - 공용체, 열거형 : [확인](./Day-08/Chap17-Solution/Chap17-05-app/main.c)
 
 3. 파일 입출력
+    - 파일 종류 : 텍스트 파일, 바이너리(2진) 파일
+    - 바이너리 파일 : 데이터 파일, 내부적으로 0과 1로 저장된 파일. .dat, .exe, .mp3, .mp4...
+
+        ![alt text](image-11.png)
+    
+    - 텍스트 파일 : 사람이 읽을 수 있는 문자로 된 파일. .txt, .log, .cmd, .bat, .docx, .hwpx, .pptx...
+
+        ![alt text](image-12.png)
+
+    - 파일 오픈 : [확인](./Day-08/Chap18-Solution/Chap18-01-app/main.c)
 
 4. 전처리, 분할 컴파일
 
