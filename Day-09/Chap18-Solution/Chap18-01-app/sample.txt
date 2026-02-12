@@ -1,0 +1,3 @@
+Hello World!
+Hello Basic C!
+What a wonderful word!
