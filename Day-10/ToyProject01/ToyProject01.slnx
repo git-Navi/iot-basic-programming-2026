@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Addressbook_step1/Addressbook_step1.vcxproj" Id="21e85e60-3d3b-4c62-b595-081480667a8c" />
+  <Project Path="Addressbook_step2/Addressbook_step2.vcxproj" Id="af79bf70-1df2-43a4-904e-e9c7d14bd291" />
+  <Project Path="Addressbook_step3/Addressbook_step3.vcxproj" />
+  <Project Path="Addressbook_step4/Addressbook_step4.vcxproj" />
+</Solution>
