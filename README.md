@@ -240,7 +240,13 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 4. 문자열과 포인터 : [확인](./Day-06/Chap12-Solution/Chap12-01-app/main.c)
     - 문자열 연산 함수
         - 자주 사용하는 문자열 처리 내장 함수
-        - `strlen()`, strcpy(), strncpy(), strcat(), strncat(), strcmp(), strncmp()
+        - `strlen()` : 문자열 길이 리턴 함수
+        - `strcpy()`, strncpy() : 문자열 대입 함수, n은 글자 갯수만큼 대입
+        - strcat(), strncat() : 문자열 합치기 함수
+        - `strcmp()`, strncmp() : 문자열 비교 함수, 두 문자열이 같은지 확인
+        - strcspn() : 문자열에서 찾고자 하는 문자열에 포함된 문자를 검색, 일치할 때까지 읽어들인 문자의 갯수 리턴
+        - strtok() : 패턴 문자열로 기존 문자열을 자르는 함수
+        - strchr() : 문자열에서 특정 문자가 가장 먼저 나타나는 곳의 위치를 리턴하는 함수
     
 5. TIP
     - #pragma region, #pragma endregion
@@ -433,6 +439,7 @@ IoT 개발자 과정 기초 프로그래밍 언어 학습 repository
 9. 헤더파일 필요성, 중복 문제 해결
 
 ## 10일차
+## 11일차
 
 ### 토이 프로젝트
 
